@@ -1,6 +1,6 @@
 # Booklets 2026
 
-Math booklets for Colegio San Patricio, taught by Miss Marcela Sársfield Arias.
+Math booklets for St. Patrick's School (Colegio San Patricio), taught by Miss Marcela Sársfield Arias.
 
 Open `index.html` for the three courses: Google Classroom codes, the unit list, and the booklet. Page numbers in the index are PDF pages.
 

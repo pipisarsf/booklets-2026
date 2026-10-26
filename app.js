@@ -516,8 +516,10 @@ document.body.addEventListener("click", async (event) => {
   const frame = document.querySelector("#booklet");
   if (!frame) return;
   const page = pageButton.dataset.page;
-  frame.src = `${frame.dataset.file}#page=${page}`;
-  frame.scrollIntoView({ behavior: "smooth", block: "start" });
+  // A new query forces the PDF viewer to load again. Changing only the #page
+  // fragment leaves the reader on the page it already opened.
+  frame.src = `${frame.dataset.file}?open=${page}-${Date.now()}#page=${page}`;
+  frame.scrollIntoView({ behavior: "auto", block: "start" });
 });
 
 window.addEventListener("hashchange", render);

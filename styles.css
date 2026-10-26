@@ -13,7 +13,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: auto; }
 
 body {
   margin: 0;
@@ -78,6 +78,10 @@ h1 {
   gap: 8px 22px;
   padding: 14px 0;
   border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--paper);
 }
 
 .year-nav a {
@@ -362,6 +366,7 @@ iframe {
   height: min(82vh, 960px);
   border: 1px solid var(--line);
   background: var(--white);
+  scroll-margin-top: 72px;
 }
 
 .colophon {
