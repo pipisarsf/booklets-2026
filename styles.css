@@ -219,6 +219,10 @@ th {
   color: var(--green-deep);
 }
 
+tbody th {
+  width: 6.5rem;
+}
+
 td ul, .topics {
   margin: 0;
   padding-left: 1.1rem;
@@ -392,9 +396,11 @@ iframe {
 
   thead { display: none; }
 
-  td { border-top: 0; padding-top: 0; }
+  td, tbody th { border-top: 0; padding-top: 0; }
 
   tr { border-top: 1px solid var(--line); padding: 10px 0; }
+
+  tbody th { width: auto; margin-bottom: 6px; }
 
   td::before {
     display: block;
@@ -406,9 +412,9 @@ iframe {
     margin-bottom: 4px;
   }
 
-  td:nth-child(1)::before { content: "1st year"; }
-  td:nth-child(2)::before { content: "2nd year"; }
-  td:nth-child(3)::before { content: "3rd year"; }
+  td:nth-child(2)::before { content: "1st year"; }
+  td:nth-child(3)::before { content: "2nd year"; }
+  td:nth-child(4)::before { content: "3rd year"; }
 }
 
 @media print {

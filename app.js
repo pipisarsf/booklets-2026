@@ -388,6 +388,7 @@ function renderOverview() {
 
   const rows = strands.map((strand) => `
     <tr>
+      <th scope="row">${esc(strand.name)}</th>
       ${strand.cells.map((cell) => `<td>${esc(cell)}</td>`).join("")}
     </tr>
   `).join("");
@@ -402,6 +403,7 @@ function renderOverview() {
     <table>
       <thead>
         <tr>
+          <th>Strand</th>
           <th>1st year · 86 pages</th>
           <th>2nd year · 84 pages</th>
           <th>3rd year · 66 pages</th>
